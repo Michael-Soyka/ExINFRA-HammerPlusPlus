@@ -1,0 +1,28 @@
+"GameInfo"
+{
+	game 		"INFRA"
+	
+	GameData	"INFRA.fgd"
+
+	gamelogo 	1
+
+	SupportsDX8     0
+	SupportsXbox360 0
+
+	FileSystem
+	{
+		SteamAppId	251110
+		ToolsAppId	211
+
+		SearchPaths
+		{
+			mod+mod_write+default_write_path	|gameinfo_path|.
+
+			game				|all_source_engine_paths|hammer
+			game				|all_source_engine_paths|game
+
+			game	|all_source_engine_paths|hammer/platform_pak01.vpk
+			platform	|all_source_engine_paths|platform
+		}
+	}
+}

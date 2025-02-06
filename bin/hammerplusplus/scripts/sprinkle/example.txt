@@ -1,0 +1,28 @@
+"Example: Agave Plants" //This is what shows up in Type
+{
+	base //The base values of what you want to sprinkle. Every entity will have these values, but you do not need to put anything here
+	{
+		"classname" "prop_static"
+		grid "64 64" // The default grid size of this type, this can be overridden in Hammer
+	}
+	
+	10 //This is the chance of this set of values being used, this can be any number
+	{
+		"model" "models/props/de_dust/hr_dust/foliage/agave_plant_01.mdl" //The values of this case
+	}
+	10
+	{
+		"model" "models/props/de_dust/hr_dust/foliage/agave_plant_02.mdl"
+		"rendercolor" "13 204 75"
+	}
+	10
+	{
+		"model" "models/props/de_dust/hr_dust/foliage/agave_plant_03.mdl"
+		"rendercolor" "13 204 75"
+	}
+	10 //Since there's 4 cases with the same chance, each case has a 1/4 chance of being placed
+	{
+		"model" "models/props/de_dust/hr_dust/foliage/agave_plant_04.mdl"
+		"uniformscale" "1.3"
+	}
+}

@@ -1,0 +1,98 @@
+"UserConfigData"
+{
+	"resource"
+	{
+		"mdlpicker.res"
+		{
+			"FileBrowserSplitter"
+			{
+				"child0"
+				{
+					"AssetSplitter"
+					{
+						"child1"
+						{
+							"AssetBrowser"
+							{
+								"lastBarWidth"		"607"
+								"0_hidden"		"0"
+								"0_width"		"76"
+								"1_hidden"		"0"
+								"1_width"		"532"
+							}
+						}
+						"0_splitter_pos"		"660.500000"
+						"1_splitter_pos"		"1321.000000"
+					}
+				}
+				"child1"
+				{
+					"PreviewSplitter"
+					{
+						"child0"
+						{
+							"ModelPanel"
+							{
+								"panelsize"		"200"
+							}
+						}
+						"child1"
+						{
+							"ViewsSheet"
+							{
+								"InfoPage"
+								{
+									"PropData"
+									{
+										"lastBarWidth"		"1861"
+										"0_hidden"		"0"
+										"0_width"		"250"
+										"1_hidden"		"0"
+										"1_width"		"1612"
+									}
+								}
+								"SkinsPage"
+								{
+									"SkinsList"
+									{
+										"lastBarWidth"		"0"
+										"0_hidden"		"0"
+										"0_width"		"52"
+									}
+								}
+								"SequencesPage"
+								{
+									"SequencesList"
+									{
+										"lastBarWidth"		"0"
+										"0_hidden"		"0"
+										"0_width"		"52"
+									}
+								}
+								"ActivitiesPage"
+								{
+									"ActivitiesList"
+									{
+										"lastBarWidth"		"0"
+										"0_hidden"		"0"
+										"0_width"		"52"
+									}
+								}
+								"AttachmentsList"
+								{
+									"lastBarWidth"		"0"
+									"0_hidden"		"0"
+									"0_width"		"52"
+								}
+							}
+						}
+						"0_splitter_pos"		"1056.800049"
+						"1_splitter_pos"		"1321.000000"
+					}
+				}
+				"0_splitter_pos"		"636.000000"
+				"1_splitter_pos"		"2544.000000"
+			}
+		}
+	}
+}

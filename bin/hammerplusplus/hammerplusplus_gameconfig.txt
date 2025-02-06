@@ -1,0 +1,32 @@
+"Configs"
+{
+	"SDKVersion"		"5"
+	"Games"
+	{
+		"INFRA"
+		{
+			"GameDir"		"..\hammer"
+			"Hammer"
+			{
+				"GameData0"		"..\root\bin\INFRA.fgd"
+				"TextureFormat"		"5"
+				"MapFormat"		"4"
+				"DefaultTextureScale"		"0.250000"
+				"DefaultLightmapScale"		"24"
+				"GameExe"		"..\root\infra.exe"
+				"DefaultSolidEntity"		"func_detail"
+				"DefaultPointEntity"		"info_player_start"
+				"BSP"		"..\root\bin\vbsp.exe"
+				"Vis"		"..\root\bin\vvis.exe"
+				"Light"		"..\root\bin\vrad.exe"
+				"GameExeDir"		"..\root"
+				"MapDir"		"..\game\maps"
+				"BSPDir"		"..\game\maps"
+				"PrefabDir"		"..\game\maps\Prefabs"
+				"CordonTexture"		"tools/toolsnodraw"
+				"MaterialExcludeCount"		"0"
+				"Previous"		"1"
+			}
+		}
+	}
+}
