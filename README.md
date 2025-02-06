@@ -5,6 +5,8 @@
 3. [Other](#Other)
 4. [Credits](#Credits)
 
+TODO: Compiling
+
 ### About
 This small bundle contains minimal required CSGO's Shaders & Libs to run Ficool2's Hammer++
 
