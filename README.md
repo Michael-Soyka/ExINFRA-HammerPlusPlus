@@ -15,6 +15,10 @@ This small bundle contains minimal required CSGO's Shaders & Libs to run Ficool2
 2. Run setup.bat
 3. Insert path to Infra game root folder ( ex. `$steamapps/common/infra` )
 4. Run start.bat
+5. (If something is wrong) Configure the Hammer++
+
+### TODO
+* Auto-generate game_config for hammer++ with `setup.bar` paths. 
 
 ### Other
 Why did I provide shaders and libs here?\
