@@ -1,0 +1,1 @@
+powershell -File prepareEnv.ps1
