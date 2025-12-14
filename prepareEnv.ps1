@@ -158,21 +158,21 @@ $defaultCompilersParams = @"
             "enable"		"1"
             "specialcmd"		"0"
             "run"		"$infraBinPath\vbsp.exe"
-            "parms"		"-game $infraGamePath `$path\`$file"
+            "parms"		"`$path\`$file"
         }
         "2"
         {
             "enable"		"1"
             "specialcmd"		"0"
             "run"		"$infraBinPath\vvis.exe"
-            "parms"		"-fast -game $infraGamePath `$path\`$file"
+            "parms"		"-fast `$path\`$file"
         }
         "3"
         {
             "enable"		"1"
             "specialcmd"		"0"
             "run"		"$infraBinPath\vrad.exe"
-            "parms"		"-staticproppolys -staticproplighting -staticpropsamplescale 0.25 -bounce 2 -noextra -game $infraGamePath `$path\`$file"
+            "parms"		"-staticproppolys -staticproplighting -staticpropsamplescale 0.25 -bounce 2 -noextra `$path\`$file"
         }
         "4"
         {
@@ -185,7 +185,7 @@ $defaultCompilersParams = @"
             "enable"		"1"
             "specialcmd"		"0"
             "run"		"$infraPath\infra.exe"
-            "parms"		"-dev -console -allowdebug -hijack -insecure -game $infraGamePath +map `$file"
+            "parms"		"-dev -console -allowdebug -hijack -insecure +map `$file"
         }
     }
     "Full Compile"
@@ -195,21 +195,21 @@ $defaultCompilersParams = @"
             "enable"		"1"
             "specialcmd"		"0"
             "run"		"$infraBinPath\vbsp.exe"
-            "parms"		"-game $infraGamePath `$path\`$file"
+            "parms"		"`$path\`$file"
         }
         "2"
         {
             "enable"		"1"
             "specialcmd"		"0"
             "run"		"$infraBinPath\vvis.exe"
-            "parms"		"-game $infraGamePath `$path\`$file"
+            "parms"		"`$path\`$file"
         }
         "3"
         {
             "enable"		"1"
             "specialcmd"		"0"
             "run"		"$infraBinPath\vrad.exe"
-            "parms"		"-hdr -staticproppolys -staticproplighting -game $infraGamePath `$path\`$file"
+            "parms"		"-hdr -staticproppolys -staticproplighting `$path\`$file"
         }
         "4"
         {
@@ -222,7 +222,7 @@ $defaultCompilersParams = @"
             "enable"		"1"
             "specialcmd"		"0"
             "run"		"$infraPath\infra.exe"
-            "parms"		"-dev -console -allowdebug -hijack -insecure -game $infraGamePath +map `$file"
+            "parms"		"-dev -console -allowdebug -hijack -insecure +map `$file"
         }
     }
     "Full Compile -final (slow!)"
@@ -246,7 +246,7 @@ $defaultCompilersParams = @"
             "enable"		"1"
             "specialcmd"		"0"
             "run"		"$infraBinPath\vrad.exe"
-            "parms"		"-hdr -final -staticproppolys -staticproplighting -game $infraGamePath `$path\`$file"
+            "parms"		"-hdr -final -staticproppolys -staticproplighting `$path\`$file"
         }
         "4"
         {
@@ -259,7 +259,7 @@ $defaultCompilersParams = @"
             "enable"		"1"
             "specialcmd"		"0"
             "run"		"$infraPath\infra.exe"
-            "parms"		"-dev -console -allowdebug -hijack -insecure -game $infraGamePath +map `$file"
+            "parms"		"-dev -console -allowdebug -hijack -insecure +map `$file"
         }
     }
     "Only Entities"
@@ -269,7 +269,7 @@ $defaultCompilersParams = @"
             "enable"		"1"
             "specialcmd"		"0"
             "run"		"$infraBinPath\vbsp.exe"
-            "parms"		"-onlyents -game $infraGamePath `$path\`$file"
+            "parms"		"-onlyents `$path\`$file"
         }
         "2"
         {
@@ -282,7 +282,7 @@ $defaultCompilersParams = @"
             "enable"		"1"
             "specialcmd"		"0"
             "run"		"$infraPath\infra.exe"
-            "parms"		"-dev -console -allowdebug -hijack -insecure -game $infraGamePath +map `$file"
+            "parms"		"-dev -console -allowdebug -hijack -insecure +map `$file"
         }
     }
     "Run Map in Engine Fullscreen"
@@ -291,7 +291,7 @@ $defaultCompilersParams = @"
         {
             "enable"		"1"
             "run"		"$infraPath\infra.exe"
-            "parms"		"-fullscreen -dev -console -allowdebug -hijack -insecure -game $infraGamePath +map `$file"
+            "parms"		"-fullscreen -dev -console -allowdebug -hijack -insecure +map `$file"
         }
     }
     "Run Map in Engine Windowed"
@@ -300,7 +300,7 @@ $defaultCompilersParams = @"
         {
             "enable"		"1"
             "run"		"$infraPath\infra.exe"
-            "parms"		"-sw -dev -console -allowdebug -hijack -insecure -game $infraGamePath +map `$file"
+            "parms"		"-sw -dev -console -allowdebug -hijack -insecure +map `$file"
         }
     }
 }
@@ -330,7 +330,7 @@ $defaultGamesParams = @"
 				"Light"		"..\root\bin\vrad.exe"
 				"GameExeDir"		"..\root"
 				"MapDir"		"..\game\maps"
-				"BSPDir"		"..\game\maps"
+				"BSPDir"		"$infraGamePath\maps"
 				"PrefabDir"		"..\game\maps\Prefabs"
 				"CordonTexture"		"tools/toolsnodraw"
 				"MaterialExcludeCount"		"0"
