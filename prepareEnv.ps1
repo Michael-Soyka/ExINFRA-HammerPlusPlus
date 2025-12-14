@@ -92,20 +92,19 @@ $hammerBundleTempPath = "$hammerBundlePath/temp"
 New-Item -Path "$hammerBundleTempPath" -ItemType "Directory" -Force
 
 $csgoPath = Read-Host "ENTER CSGO PATH"
-
 Copy-Item -Path "$csgoPath/bin" -Destination "./" -Force -Recurse
 
 $vpkeditPath = GetVPKEdit -OutDir $hammerBundleTempPath
 Invoke-Expression -Command "$vpkeditPath/vpkeditcli `"$csgoPath/platform/platform_pak01_dir.vpk`" -o `"$hammerBundleTempPath`" -e"
+
+$csgoResourceFolder = "$hammerBundleTempPath/platform_pak01/resource"
+New-Item -Path $csgoResourceFolder -ItemType "Directory" -Force
+Copy-Item -Path "$csgoPath/csgo/resource/*.vfont" -Destination $csgoResourceFolder -Force -Recurse
+
 Invoke-Expression -Command "$vpkeditPath/vpkeditcli `"$hammerBundleTempPath/platform_pak01`" -o `"$hammerBundlePath/pak01_dir`""
 
-New-Item -Path "$hammerBundlePath/resource" -ItemType "Directory" -Force
-Copy-Item -Path "$csgoPath/csgo/resource/*.vfont" -Destination "$hammerBundlePath/resource" -Force -Recurse
-
 $hammerplusplusPath = GetHammerPlusPlus -OutDir "$hammerBundleTempPath"
-
 Copy-Item -Path "$hammerplusplusPath/bin" -Destination "./" -Force -Recurse
-
 Remove-Item -Path "$hammerBundleTempPath" -Force -Recurse
 
 $infraPath     = Read-Host "ENTER INFRA PATH"
