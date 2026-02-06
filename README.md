@@ -17,6 +17,10 @@ This repacker will prepare an env to run Ficool2's Hammer++ with INFRA
 4. Insert path to INFRA game root folder ( ex. `$steamapps/common/infra` )
 5. Run start.bat
 
+### Support
+ - [x] Windows NT
+ - [ ] Linux
+
 ### Other
 — *THE REPACEKR IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND!*
 
